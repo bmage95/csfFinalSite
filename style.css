@@ -1,31 +1,44 @@
 body {
     margin: 0;
     padding: 0;
-    background: #faf5ef;
-    font-family: "Segoe UI", sans-serif;
+    background: #FAF5EF;
+    font-family: 'Inter', sans-serif;
     color: #222;
 }
 
+.bg {
+    position: fixed;
+    inset: 0;
+    background: url("bg-result.jpeg") center/cover no-repeat; 
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
 .container {
-    max-width: 600px;
-    margin: 90px auto;
+    max-width: 700px;
+    margin: 60px auto;
     padding: 40px;
-    background: white;
-    border-radius: 14px;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 20px;
+    border: 2px solid #C8B8A9;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
 h1 {
-    font-size: 28px;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
     margin-bottom: 25px;
+    color: #633333;
 }
 
 .assigned-text {
-    font-size: 24px;
+    font-size: 26px;
     margin: 20px 0;
-    font-weight: bold;
-    color: #633;
+    font-weight: 700;
+    color: #633333;
 }
 
 .explain {
@@ -33,19 +46,20 @@ h1 {
     font-size: 16px;
     line-height: 1.6;
     opacity: 0.9;
+    font-family: 'Inter', sans-serif;
 }
 
 button {
-    margin-top: 30px;
-    background: #633;
+    margin-top: 35px;
+    background: #633333;
     color: white;
-    padding: 10px 22px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 button:hover {
-    background: #542020;
+    background: #4c2222;
 }
